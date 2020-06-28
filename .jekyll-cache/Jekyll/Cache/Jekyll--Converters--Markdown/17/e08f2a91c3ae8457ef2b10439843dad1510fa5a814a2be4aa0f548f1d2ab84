@@ -1,0 +1,7 @@
+I"’<p>I recently published a paper on Gradient Recovery technique based on
+oblique projection for the virtual element method in the ANZIAM
+journal as a part of CTAC proceedings [1]. The idea behind the gradient
+recovery technique is to project the virtual element gradient onto the
+\(L^2\) space using an oblique projection. You can find the finite
+element equivalent, for example, in this paper [3].</p>
+:ET

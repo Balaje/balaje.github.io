@@ -1,0 +1,18 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+title: Balaje Kalyanaraman
+description: Ph.D Student at the University of Newcastle, Australia.
+---
+
+## Welcome to my research website.
+
+My name is Balaje Kalyanaraman and I am a PhD student at the
+University of Newcastle, Australia. I did my M.Sc (Hons) Mathematics
+and B.E (Hons) Mechanical Engineering from BITS Pilani - Goa Campus. My
+interests lie in the field of numerical methods to solve partial
+differential equations.
+
+Feel free to look around. You can start with my [Resume here](/about/); short description of my current [research interests](/research) here; my blog [here](/blog-page). You can also check out my github profile [@github.com/Balaje](https://github.com/Balaje) and my Google
+scholar [@scholar/Balaje.](https://scholar.google.com.au/citations?user=h_FPNVAAAAAJ&hl=en)

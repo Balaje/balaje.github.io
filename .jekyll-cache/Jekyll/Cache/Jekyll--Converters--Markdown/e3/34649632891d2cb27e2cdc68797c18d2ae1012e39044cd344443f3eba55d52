@@ -1,0 +1,94 @@
+I"�<p><strong>This post was published in 2014 and as such the program might not
+be up to date and as a result may not work properly. However it was a
+cool project at the time!!</strong></p>
+
+<p>This post is about an application that I tried to make using the
+OpenCV Image Processing Library. This application can detect the
+changes in brightness of the environment and adjust your laptop’s
+screen brightness accordingly.</p>
+
+<p>Pixel is the smallest element in an image with definite properties
+like color, position, intensity etc. A typical colored pixel has three
+channels RED, GREEN and BLUE.  Let me denote this as a 3-tuple
+\((R,G,B)\). Colors like magenta, yellow etc. are derived from these 3
+primary colors and hence they are called derived colors. In image
+processing the derived colors are the various combinations of
+\((R,G,B)\). For example If I consider the RED color as \((255,0,0)\), BLUE as
+$(0,0,255)$ and GREEN as \((0,255,0)\). Then YELLOW can be represented as
+\((255,255,0)\).</p>
+
+<p>Gray-scale images are those images which has only one channel and let
+us denote this by \(I\). Grayscale images are useful when it comes to
+processing images, as it reduces three channels to one and thus
+eliminates redundancy. This is an example of a typical Grayscale
+image.</p>
+
+<p style="text-align: center;">
+<img width="473" height="315" src="/img/lenatest3.jpg" border="2" />
+</p>
+
+<p>Now after understanding what colored images and grayscale images are;
+let us move towards the basic algorithm of the application.</p>
+
+<p>First, the application captures images from the laptop’s webcam.
+Second, the application computes the average intensity (I) of the
+entire camera input. Changes brightness according to the intensity values.
+As an extra feature the application also supports Gesture Brightness Control.
+Now, the question is how to get the average intensity?</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Mat</span> <span class="n">img</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">img</span><span class="p">.</span><span class="n">at</span><span class="o">&lt;</span><span class="n">uchar</span><span class="o">&gt;</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This is an overloaded C++ template function which returns the pixel
+value at the position (j,i). This function is only used for a
+grayscale image i.e. ‘img’ should be grayscale image.</p>
+
+<p>To get the average intensity of all pixels in a grayscale image, we
+can use a ‘for’ loop.</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">unsigned</span> <span class="kt">long</span> <span class="kt">int</span> <span class="n">sum</span><span class="p">;</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">img</span><span class="p">.</span><span class="n">rows</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">img</span><span class="p">.</span><span class="n">cols</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">sum</span> <span class="o">+=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">img</span><span class="p">.</span><span class="n">at</span><span class="o">&lt;</span><span class="n">uchar</span><span class="o">&gt;</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kt">int</span> <span class="n">intensity</span> <span class="o">=</span> <span class="n">sum</span><span class="o">/</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="n">rows</span><span class="o">*</span><span class="n">img</span><span class="p">.</span><span class="n">cols</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Now we have computed the average intensity of the frame. Now our next
+step is to change the brightness depending on the value of the
+intensity. In linux, the brightness can be changed by editing.</p>
+
+<blockquote>
+  <p>/(file system) -&gt; sys -&gt; class -&gt; backlight -&gt; acpi_video0 -&gt; brightness</p>
+</blockquote>
+
+<p>To change the brightness, open the terminal and run this command. (As root)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo </span>10 <span class="o">&gt;</span> /sys/class/backlight/acpi_video0/brightness
+</code></pre></div></div>
+
+<p>If you want to try out the application, download the source tar-ball
+from <a href="https://sourceforge.net/projects/autobrightness/">here</a>.</p>
+
+<p>Then extract the archive, run the install.sh script.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar</span> <span class="nt">-xvf</span> Autobrightness.tar.gz
+<span class="nb">cd </span>Autobrightness
+<span class="nb">chmod</span> +x install.sh
+./install.sh
+</code></pre></div></div>
+
+<p>After installing, close and reopen the terminal and type</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autobrightness
+</code></pre></div></div>
+<p>to start the application.</p>
+
+<p>This installation script is only for linux (Ubuntu/mint), but the
+source code can be compiled in other Operating Systems like Windows
+etc.</p>
+:ET
