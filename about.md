@@ -1,7 +1,7 @@
 ---
 title: Balaje's Resume
 layout: default
-description: 
+description:
 ---
 
 # Education
@@ -44,7 +44,7 @@ Newcastle, 15-16 April 2019 -
 ## Accepted/Published
 - B. Kalyanaraman, M. Meylan, L. Bennetts, B. Lamichhane, A coupled
 fluid–elasticity model for the wave forcing of an ice-shelf,
-*Accepted, Journal of Fluids and Structures*.
+*Journal of Fluids and Structures, 97, 103074*.
 - B. Kalyanaraman, M. Meylan, B. Lamichhane, Coupled Brinkman and
 Kozeny--Carman Model for Railway Ballast Washout Using the Finite
 Element Method, *Accepted, Journal of the Royal Society of New Zealand*.
