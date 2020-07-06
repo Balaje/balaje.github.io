@@ -1,12 +1,12 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: default
+layout: noContentsDefault
 title: Balaje Kalyanaraman
 description: Ph.D Student at the University of Newcastle, Australia.
 ---
 
-## Welcome to my research website.
+# Welcome to my research website.
 
 My name is Balaje Kalyanaraman and I am a PhD student at the
 University of Newcastle, Australia. I did my M.Sc (Hons) Mathematics
