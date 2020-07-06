@@ -1,5 +1,5 @@
 ---
-layout: noContentsDefault
+layout: default
 title: Balaje's Research
 mathjax : true
 youtubeId: lE5mlxDdmaY

@@ -8,6 +8,8 @@
 
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/academicons.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://use.fontawesome.com/fa43afbafd.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
@@ -51,7 +53,28 @@
 
     <div class="wrapper">
       <nav>
-        <link rel="stylesheet" href="{{ '/assets/css/academicons.css?v=' | append: site.github.build_revision | relative_url }}">
+        <p>
+          <a class="contact_link" href="https://scholar.google.com.au/citations?user=h_FPNVAAAAAJ&hl=en">
+            <i class="ai ai-google-scholar-square ai-4x"></i>
+          </a>
+          <a class="contact_link" href="https://www.researchgate.net/profile/K_Balaje">
+            <i class="ai ai-researchgate-square ai-4x"></i>
+          </a>
+          <a class="contact_link" href="https://github.com/Balaje">
+            <i class="fa fa-github-square fa-4x"></i>
+          </a>
+        </p>
+        <p>
+          <a class="contact_link" href="https://bitbucket.org/balajek/">
+            <i class="fa fa-bitbucket-square fa-4x"></i>
+          </a>
+          <a class="contact_link" href="https://orcid.org/0000-0001-6181-1876">
+            <i class="ai ai-orcid-square ai-4x"></i>
+          </a>
+          <a class="contact_link" href="https://arxiv.org/a/balaje_k_1.html">
+            <i class="ai ai-arxiv-square ai-4x"></i>
+          </a>
+        </p>
       </nav>
       <section>
         {{ content }}
@@ -63,8 +86,10 @@
         <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p>&copy; Copyright 2019-2020, Balaje Kalyanaraman</p>
-        <p><small>Original Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+        <p><small>Based on the Leap-Day Theme  by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
+        <p><small> Best viewed in Desktops </small></p>
       </footer>
+
     </div>
 
     <div class="footer">

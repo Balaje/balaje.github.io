@@ -13,7 +13,7 @@ body {
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: url(../images/body-background.png) #eae6d1;
+  background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 204));
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -150,13 +150,13 @@ dt {
 header {
   padding: 25px 20px 40px 20px;
   margin: 0;
-  position: absolute;
+  position: relative;
   top: 0;
   left:0;
   right:0;
   width: 100%;
   text-align: center;
-  background: linear-gradient(rgb(115, 115, 115),rgb(140, 140, 140));  
+  background: linear-gradient(rgb(0, 90, 204),rgb(0, 140, 204));
   z-index:99;
   -webkit-font-smoothing:antialiased;
   min-height: 76px;
@@ -164,7 +164,7 @@ header {
   h1 {
       font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #f3f3f3;
-      text-shadow: 0px 2px 0px #235796;
+      text-shadow: 0px 2px 0px #0000;
       margin: 0px;
       white-space: nowrap;
       overflow: hidden;
@@ -176,7 +176,7 @@ header {
   h2 {
       font: 30px/38px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #f3f3f3;
-      text-shadow: 0px 2px 0px #235796;
+      text-shadow: 0px 2px 0px #0000;
       margin: 0px;
       white-space: nowrap;
       overflow: hidden;
@@ -201,14 +201,13 @@ header {
   height: 50px;
   margin-right:-382px;
   position: relative;
-  top: 115px;
-  z-index: 99;
-  background: linear-gradient(rgb(140,140,140),rgb(153, 153, 153));      
+  top: 0px;  
+  background: rgb(0, 140, 204);
   padding-right: 10px;
 
   .button {
     border: 1px solid #0000;
-    background: linear-gradient(rgb(230, 230, 230), rgb(242, 242, 242));
+    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 204));
     border-radius: 4px;
     box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
     background-color: #FFE788;
@@ -223,7 +222,7 @@ header {
     text-align:center;
 
     &:hover {
-      background: linear-gradient(rgb(255, 231, 136), rgb(255, 231, 136));
+      background: linear-gradient(rgb(255, 200, 136), rgb(255, 200, 136));
       background-color: #ffeca0;
     }
   }
@@ -280,15 +279,15 @@ header {
 }
 
 section {
-  width:790px;
-  padding: 30px 30px 50px 30px;
-  margin: 30px 0;
-  margin-top: 190px;
-  position:relative;
-  background: #fbfbfb;
-  border-radius: 3px;
-  border: 1px solid #cbcbcb;
-  box-shadow: 0px 1px 2px rgba(0,0,0,.09), inset 0px 0px 2px 2px rgba(255,255,255,.5), inset 0 0 5px 5px rgba(255,255,255,.4);
+    width:790px;
+    padding: 30px 30px 50px 30px;
+    margin: 30px 0;
+    margin-top: 20px;
+    position:relative;
+    background: #fbfbfb;
+    border-radius: 4px;
+    border: 1px solid #cbcbcb;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.09), inset 0px 0px 2px 2px rgba(255,255,255,.5), inset 0 0 5px 5px rgba(255,255,255,.4);
 }
 
 small {
@@ -297,7 +296,7 @@ small {
 
 nav {
   width: 330px;
-  position: absolute;
+  position: fixed;
   top: 220px;
   left:50%;
   margin-left:-680px;
