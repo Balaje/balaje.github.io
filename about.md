@@ -11,6 +11,7 @@ Australia. (2018 - present)
 - **B.E.(Hons)** Mechanical Engineering, BITS Pilani Goa Campus (2012-2017)
 
 # Conferences
+- AUSTMS 2020, Zoom Webinar
 - ANZIAM 2020, Hunter Valley.
 - 34th International Workshop on Water Waves and Floating Bodies
 (IWWWFB), 07-10 Apr
@@ -24,6 +25,8 @@ Computational PDE, 05-09 Dec 2016, UIET Panjab University.
 # Seminars and Colloquium
 
 ## 2020:
+- Mathematics of Sea Ice and Ice Sheets (MOSSI),
+Newcastle/Zoom Webinar - [Slides](MOSSI-Talk.pdf)
 - Monash Workshop on Numerical Differential Equations
 and Applications 2020, Monash University,
 Melbourne - [Slides](VEM-Monash.pdf)
@@ -58,12 +61,6 @@ vibrations, *Wave Motion 90, 1–16*.
 element method for elliptic optimal control problems using a
 three-field formulation. *ANZIAM Journal, 59, 97-111*.
 
-## Submitted
-- B. Kalyanaraman, P. Danumjaya, On the penalty term for the mixed
-discontinuous Galerkin finite element method for the bi-harmonic
-equation, *Submitted*.
-
-
 # Awards and Achievements
 - Selected for an International PhD Summer School on
 Ocean Engineering conducted by the University of Dundee, Scotland
@@ -77,5 +74,5 @@ Bangalore (2016, 2017).
 
 # Programming
 - **Languages**: MATLAB, C++, Fortran, Python
-- **Packages**: FreeFem++, LaTeX
+- **Packages**: FreeFem, LaTeX
 - **Version Control**: Git
