@@ -154,7 +154,7 @@ header {
   top: 0;
   left:0;
   right:0;
-  width: 100%;
+  width: 97.7%;
   text-align: center;
   background: linear-gradient(rgb(0, 90, 204),rgb(0, 140, 204));
   z-index:99;
@@ -196,10 +196,9 @@ header {
 #banner {
   z-index: 100;
   left:0;
-  right:0%;
+  right:0;
   width: 100%;
   height: 50px;
-  margin-right:-382px;
   position: relative;
   top: 0px;
   background: rgb(0, 140, 204);
@@ -222,8 +221,8 @@ header {
     text-align:center;
 
     &:hover {
-      background: linear-gradient(rgb(255, 200, 136), rgb(255, 200, 136));
-      background-color: #ffeca0;
+      background: #F53704;
+      background-color: #F53704;
     }
   }
 
@@ -278,11 +277,12 @@ header {
   }
 }
 
-section {
+.section {
     width:890px;
     padding: 30px 30px 50px 30px;
-    margin: 30px 0;
-    margin-top: 20px;
+    margin: 0px 0;
+    margin-top: 0px;
+    top: -120px;
     position:relative;
     background: #fbfbfb;
     border-radius: 4px;
@@ -294,10 +294,10 @@ small {
   font-size:12px;
 }
 
-nav {
+.nav {
   width: 330px;
-  position: fixed;
-  top: 220px;
+  position: relative;
+  top: 50px;
   left:50%;
   margin-left:-680px;
   text-align: right;
@@ -349,14 +349,10 @@ nav {
   }
 }
 
-footer {
-  width:180px;
+.footer {
+  width:950px;
   position: relative;
-  left:50%;
-  margin-left:-530px;
-  bottom:20px;
-  text-align: right;
-  line-height: 16px;
+  text-align: center;
 }
 
 @media print, screen and (max-width: 1060px) {

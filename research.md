@@ -6,7 +6,9 @@ youtubeId: lE5mlxDdmaY
 ---
 # Ice Shelf Vibrations
 
-![Image](/img/ice.png)
+<p style='text-align: center;'>
+<img width="660" height="315" src="/img/ice.png" border="2">
+</p>
 
 Consider an ice-shelf which is assumed to be a two dimensional elastic
 body. The ice-shelf is fixed at the landward end $$x=L$$ (right) and free to
@@ -66,7 +68,9 @@ where the scaling factors $$c_j$$ are obtained using mass lumping. We
 can observe higher rates of convergence for the gradient which is
 shown in the Figure below.
 
-![Image](/img/grad.png)
+<p style='text-align: center;'>
+<img width="660" height="315" src="/img/grad.png" border="2">
+</p>
 
 You can find
 the
