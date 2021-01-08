@@ -6,10 +6,8 @@ tags: [hydroelasticity,fem,freefem++]
 visible: 0
 youtubeId: ZD2xiQg1Vn4
 ---
-Hi everyone,
-
 It is quarantine time and that means, it is time to keep myself busier
-than usual. And what better time to write a blog post! Exploring finite elements with FreeFem++ has been a wonderful experience so far and it has helped me out so much throughout my PhD. The grammar of FreeFem++ enables flexibility in programming while still leaving a high degree of control with the user *(Well, that sounds fancy!).* The video below shows a fluid simulation in which a jet of fluid entering a porous medium (a trapezoid) vertically. Since we have an obstacle, the fluid escapes from the sides of the porous medium. The code is a single script which can work with any polynomial degree of approximation (P1,P2,P3 finite element spaces).
+than usual. And what better time to write a blog post! Exploring finite elements with FreeFem++ has been a wonderful experience so far and it has helped me out so much throughout my PhD. The grammar of FreeFem++ enables flexibility in programming while still leaving a high degree of control with the user. The video below shows a fluid simulation in which a jet of fluid entering a porous medium (a trapezoid) vertically. Since we have an obstacle, the fluid escapes from the sides of the porous medium. The code is a single script which can work with any polynomial degree of approximation (P1,P2,P3 finite element spaces).
 
 <div class="video-container">
   <iframe
@@ -20,8 +18,6 @@ than usual. And what better time to write a blog post! Exploring finite elements
     allowfullscreen="">
   </iframe>
 </div>
-
-A blog post about the video is coming up soon.
 
 But here, I want to share something special that I have begun to work on. I call it **iceFEM++** which is aimed to be an open-source program for modeling ice-shelf vibrations. You can find the package [here on GitHub.](https://github.com/Balaje/iceFem) You can take a look at the `README.md` file in the project for more details on how to use the program. The core computations in the package is handled by FreeFem++ and the visualization is handled by MATLAB. But I want to talk a bit more about the most salient feature of the package.
 

@@ -8,12 +8,12 @@ by Matt Graham
 @import "rouge-base16-dark";
 
 body {
-  font:16px/24px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:16px/24px 'Quattrocento Sans', "Helvetica Neue", Helvetica, arial, sans-serif;
   color:#2b2b2b;
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 204));
+  background: rgb(255,255,255)
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,7 +72,7 @@ strong {
 .wrapper {
   width:650px;
   margin:0 auto;
-  position:relative;  
+  position:relative;
 }
 
 section img {
@@ -201,7 +201,7 @@ header {
   height: 50px;
   margin-right:-382px;
   position: relative;
-  top: 0px;  
+  top: 0px;
   background: rgb(0, 140, 204);
   padding-right: 10px;
 
@@ -274,12 +274,12 @@ header {
     width: 36px;
     right:7px;
     top:7px;
-    display: block;    
+    display: block;
   }
 }
 
 section {
-    width:790px;
+    width:890px;
     padding: 30px 30px 50px 30px;
     margin: 30px 0;
     margin-top: 20px;
@@ -351,7 +351,7 @@ nav {
 
 footer {
   width:180px;
-  position: fixed;
+  position: relative;
   left:50%;
   margin-left:-530px;
   bottom:20px;
