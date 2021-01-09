@@ -7,7 +7,7 @@ visible: 0
 youtubeId: ZD2xiQg1Vn4
 ---
 It is quarantine time and that means, it is time to keep myself busier
-than usual. And what better time to write a blog post! Exploring finite elements with FreeFem++ has been a wonderful experience so far and it has helped me out so much throughout my PhD. The grammar of FreeFem++ enables flexibility in programming while still leaving a high degree of control with the user. The video below shows a fluid simulation in which a jet of fluid entering a porous medium (a trapezoid) vertically. Since we have an obstacle, the fluid escapes from the sides of the porous medium. The code is a single script which can work with any polynomial degree of approximation (P1,P2,P3 finite element spaces).
+than usual. And what better time to write a blog post! Exploring finite elements with FreeFem++ has been a wonderful experience so far and it has helped me out so much throughout my PhD. The grammar of FreeFem++ enables flexibility in programming while still leaving a high degree of control with the user. The video below shows a fluid simulation in which a jet of fluid entering a porous medium (a trapezoid) vertically. Since we have an obstacle, the fluid escapes from the sides of the porous medium. Thef code is a single script which can work with any polynomial degree of approximation ($$P1,P2,P3$$ finite element spaces).
 
 <div class="video-container">
   <iframe

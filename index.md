@@ -23,7 +23,7 @@ finite element method. You can read more about my works in my [blog](/blog-page.
     <a class="post-link" href="{{ post.url | relative_url }}">
       {{ post.title | escape }}
     </a>
-  </h3>  
+  </h3>
   </li>
 {%- endfor -%}
 </ul>
@@ -32,7 +32,7 @@ finite element method. You can read more about my works in my [blog](/blog-page.
 
 - [iceFEM@github](https://github.com/Balaje/iceFem): A FreeFem based open-source package to simulate a variety of linear hydro-elasticity problems.
 
-  | ![Vibration of an uniform ice--shelf](/img/boatCav1.png) | ![Vibration of an uniform ice--shelf](/img/BM1.png) |
+  | ![3D Vibration of a boat](/img/boatCav1.png) | ![Vibration of a non-uniform ice--shelf (BEDMAP2)](/img/BM1.png) |
 
   The algorithms are based on the papers
 
