@@ -47,7 +47,7 @@ f=spline(x,y);
  which returns a structure `f` containing the spline data. The structure contains the Coefficients of the cubic spline in the array `f.coefs` and the interval in `f.breaks`. These can then be used to parametrize the cubic spline in FreeFem++ to define the borders and construct the mesh. I tried generating the meshes for the **Brunt ice-shelf** and this is what I got (open in a new tab to view full image).
 
 <p style='text-align: center;'>
-<img width="660" height="515" src="/img/brunt.png" border="2">
+<img width="860" height="515" src="/img/brunt.png" border="2">
 </p>
 
 To summarize, I took real-life ice/cavity data from the BEDMAP2 dataset and constructed the finite element meshes using FreeFem++ to analyze the vibrations of the ice-shelf *(Flexible, but with control still with the user!)*. The code to solve the problem will be up soon and in the next few posts, I will be talking about them in detail. Visit the software website [here](https://balaje.github.io/iceFem/) for more features and keep track of what is going on.
