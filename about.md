@@ -50,7 +50,7 @@ fluid–elasticity model for the wave forcing of an ice-shelf,
 *Journal of Fluids and Structures, 97, 103074*.
 - B. Kalyanaraman, M. Meylan, B. Lamichhane, Coupled Brinkman and
 Kozeny--Carman Model for Railway Ballast Washout Using the Finite
-Element Method, *Accepted, Journal of the Royal Society of New Zealand*.
+Element Method, *Journal of the Royal Society of New Zealand, 1-14.*.
 - B. Kalyanaraman, B. P. Lamichhane, M. Meylan, A gradient recovery
 method based on an oblique projection for virtual element method,
 *ANZIAM Journal, 60, 187-200*.

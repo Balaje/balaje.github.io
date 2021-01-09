@@ -56,7 +56,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:1260px;
+  width:100%;
   margin:0 auto;
 }
 
@@ -106,7 +106,7 @@ img {
 }
 
 header {
-  width:270px;
+  width:15%;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -173,7 +173,7 @@ strong {
 }
 
 section {
-  width:900px;
+  width:70%;
   left: 1%;
   float:right;
   padding-bottom:50px;
@@ -191,7 +191,7 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:30%;
   float:left;
   position:fixed;
   bottom:50px;
@@ -278,6 +278,7 @@ footer {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
+  border-radius: 10px
 }
 
 .mastheader a {
