@@ -11,6 +11,7 @@ Australia. (2018 - present)
 - **B.E.(Hons)** Mechanical Engineering, BITS Pilani Goa Campus (2012-2017)
 
 # Conferences
+- ANZIAM 2021, Zoom Webinar
 - AUSTMS 2020, Zoom Webinar
 - ANZIAM 2020, Hunter Valley.
 - 34th International Workshop on Water Waves and Floating Bodies
@@ -45,6 +46,9 @@ Newcastle, 15-16 April 2019 -
 
 # Publications
 ## Accepted/Published
+- Kalyanaraman et al., (2021). iceFEM: A FreeFem package for wave
+  induced ice-shelf vibrations. *Journal of Open Source Software,
+  6(59), 2939*, [https://doi.org/10.21105/joss.02939](https://doi.org/10.21105/joss.02939)
 - B. Kalyanaraman, M. Meylan, L. Bennetts, B. Lamichhane, A coupled
 fluid–elasticity model for the wave forcing of an ice-shelf,
 *Journal of Fluids and Structures, 97, 103074*.
