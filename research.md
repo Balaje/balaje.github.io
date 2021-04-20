@@ -6,9 +6,7 @@ youtubeId: lE5mlxDdmaY
 ---
 # Ice Shelf Vibrations
 
-<p style='text-align: center;'>
-<img width="660" height="315" src="/img/ice.png" border="2">
-</p>
+| ![Ice Shelf](/img/ice.png) |
 
 Consider an ice-shelf which is assumed to be a two dimensional elastic
 body. The ice-shelf is fixed at the landward end $$x=L$$ (right) and free to
@@ -21,14 +19,27 @@ by linear-elasticity theory.
 The objective of the problem is to study the vibrations of the
 ice-shelf in response to the waves generated in the open ocean
 region. The problem is solved using the finite element method and the
-displacement of the ice-shelf is shown in the video below.
-
-{% include youtubePlayer.html id=page.youtubeId %}
-
-See the abstract of the
+displacement of the ice-shelf are shown in the videos below. The code
+is available on [Github](https://github.com/Balaje/iceFem) which was
+also published in the Journal of Open Source Software. The video below
+compares the vibration of an ice-shelf (modelled as a clamped elastic
+body) vs an iceberg (modelled as a free elastic body) subject to the
+same incident wave forcing. The semi-infinite boundary in Figure 1 is
+treated using a non-local boundary condition defined on the boundary
+$$\Gamma_f^{(4)}$$. See the abstract of the
 presentation in [34th International Workshop on Water Waves and
 Floating
 Bodies](https://carma.newcastle.edu.au/meetings/iwwwfb/accepted/abstract-0117.pdf)
+and also my paper
+
+  > *Kalyanaraman, B., Meylan, M. H., Bennetts, L. G., & Lamichhane, B. P. (2020).*
+  **A coupled fluid-elasticity model for the wave forcing of an ice-shelf.**
+  Journal of Fluids and Structures, 97, 103074.
+
+{% include youtubePlayer.html id="bk8VWGwTi48" %}
+
+{% include youtubePlayer.html id="cZX5naD8r5I" %}
+
 
 # Gradient Recovery for Virtual Element Methods
 
@@ -68,11 +79,12 @@ where the scaling factors $$c_j$$ are obtained using mass lumping. We
 can observe higher rates of convergence for the gradient which is
 shown in the Figure below.
 
-<p style='text-align: center;'>
-<img width="660" height="315" src="/img/grad.png" border="2">
-</p>
+| ![Voronoi solution](/img/solution_voronoi.png) | ![Voronoi Rate](/img/order_voronoi.png) |
 
 You can find
 the
 [full article online](https://journal.austms.org.au/ojs/index.php/ANZIAMJ/article/view/14041/2181) published
-in the ANZIAM Journal. Do read my [blog post](./2019/11/02/A-Note-on-Gradient-Recovery.html) on how it can be made better!!
+in the ANZIAM Journal. Do read my [blog
+post](./2019/11/02/A-Note-on-Gradient-Recovery.html) on how it can be
+made better!! Also, check out [this
+repository](https://github.com/Balaje/iVEM) for the MATLAB codes.
