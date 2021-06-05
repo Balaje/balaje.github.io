@@ -30,11 +30,11 @@ finite element method. You can read more about my work in my [blog](/blog-page.h
 
 ## My current projects
 
-- [GSoC 2021](/2021/05/19/Google-Summer-Code.html): **Google Summer of Code 2021 with NumFOCUS**
+- [GSoC 2021](/gsoc/index.html): **Google Summer of Code 2021 with NumFOCUS**
 
     Selected to be a part of GSoC 2021 with Gridap.jl and NumFOCUS. I will be working under [Oriol Colomés](http://www.oriolcolomes.com), [Santiago Badia](https://research.monash.edu/en/persons/santiago-badia-rodriguez) and [Eric Neiva](https://github.com/ericneiva) during the program. Read more [here](https://summerofcode.withgoogle.com/projects/#6175012823760896) or click the image!
 
-    | [![GSoC 2021](/img/gsoc.png)](/2021/05/19/Google-Summer-Code.html) |
+    | [![GSoC 2021](/img/gsoc.png)](/gsoc/index.html) |
 
 - [iceFEM@github](https://github.com/Balaje/iceFem): A FreeFem based open-source package to simulate a variety of linear hydro-elasticity problems.
 
