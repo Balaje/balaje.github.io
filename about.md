@@ -66,6 +66,7 @@ element method for elliptic optimal control problems using a
 three-field formulation. *ANZIAM Journal, 59, 97-111*.
 
 # Awards and Achievements
+- Google Summer of Code 2021 with [NumFOCUS/Gridap.jl](https://summerofcode.withgoogle.com/projects/#6175012823760896)
 - Selected for an International PhD Summer School on
 Ocean Engineering conducted by the University of Dundee, Scotland
 and Harbin Engineering University, China. The workshop was *fully
