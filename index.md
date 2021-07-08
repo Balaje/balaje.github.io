@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<p align="center">
+{% include comp.html %}
+</p>
+
 # Welcome to my research website.
 
 My name is Balaje Kalyanaraman and I am a PhD student at the
