@@ -7,8 +7,8 @@ title: Generating Pretty Unicode Plots
 
 A couple of months ago while I was learning Julia programming, I came across this tweet
 
-<blockquote class="twitter-tweet" data-theme="dark"><p lang="en"
-dir="ltr">Okay, this is one of the coolest <a
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Okay, this is
+one of the coolest <a
 href="https://twitter.com/hashtag/JuliaLang?src=hash&amp;ref_src=twsrc%5Etfw">#JuliaLang</a>
 packages I&#39;ve come across in a while. 💯 super nerd points go to
 UnicodePlots.jl for neat plotting directly in the terminal <a
