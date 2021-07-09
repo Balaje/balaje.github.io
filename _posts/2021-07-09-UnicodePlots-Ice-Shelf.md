@@ -22,11 +22,11 @@ charset="utf-8"></script>
 
 I don't normally spend a lot of time on twitter, but when I saw this
 tweet, I knew I needed to act upon this. I instantly fell in love with
-this and I wanted to do something cool with it. I got the
-Google Summer of Code with Gridap eventually and started working on my
+this and I wanted to do something cool with it. [I got the
+Google Summer of Code with Gridap](/gsoc/index.html) and started working on my
 project. During the weekends when I wasn't working on my GSoC project,
 I continued to explore Gridap and Julia, and so a couple of
-weeks ago, I decided to work on something with UnicodePlots.jl. I will
+weeks ago, I decided to work on something with `UnicodePlots.jl`. I will
 briefly talk about the mathematics that runs behind the code in the
 following section. Feel free to skip to the next session if you want
 to look at the implementation aspect.
