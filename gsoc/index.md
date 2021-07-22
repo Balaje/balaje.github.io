@@ -5,17 +5,17 @@ title: GSoC blog
 
 I added this little overview of the tasks just after my midterm
 evaluation. I figured my mentors and I needed something to keep track
-of in detail. This list is different from the task lists present in the
-issue tracker of the fork present in my Github page. This mostly
+of progress in detail. This list is different from the task lists present in the
+issue tracker in my Github repository. The list below mostly
 contains tasks that I have finished, but still requires
 refinement. It can be considered as a more detailed version of the
-list present in the issue tracker. Not All of the topics listed below
+list present in the issue tracker. Not all of the topics listed below
 has been merged into the organization's `gridap/master`
 repository. The ones that have been merged into the repository will be
-marked using a check-mark. The rest is mostly Work in Progress. Expect
-this to be updated.
+marked using a check-mark. The rest is mostly Work in Progress.
 
-- [x] Implementation for evaluating `FEFunction` on arbitrary points.
+- [x] Implementation for evaluating `FEFunction` on arbitrary
+      points. This covers both Lagrange and RT elements.
 
 - [ ] Evaluating manifolds on arbitrary points. [Local Branch](https://github.com/Balaje/Gridap.jl/commits/GridTopology_for_BoundaryTriangulation)
   - [ ] Extending `GridTopology` for `BoundaryTriangulation` and
@@ -45,6 +45,22 @@ this to be updated.
           `ReferenceFEs._eval_moment_dof_basis!` to convert the point
           value to the respective DOF.
     - [ ] To find a way to add the interpolation code into the package.
+
+
+Relevant Code:
+
+> - [Interpolation Lagrange Elements - Sinusoidal
+>   Mesh](https://github.com/Balaje/GSoC-2021/blob/main/Interpolation/interpolate.jl)
+> - [Interpolation Lagrange Elements - Random
+>   Mesh](https://github.com/Balaje/GSoC-2021/blob/main/Interpolation/interpolate_2.jl)
+> - [n-Dimensional Lagrange Elements (Test
+>   Set)](https://github.com/Balaje/GSoC-2021/blob/main/Interpolation/nDinterpolate.jl)
+> - [Interpolation Raviart
+>   Thomas
+>   Elements](https://github.com/Balaje/GSoC-2021/blob/main/Interpolation/interpolate_rt.jl)
+> - [Evaluation of FEFunction on d-1 Manifold (Test
+>   Set)](https://github.com/Balaje/GSoC-2021/blob/main/Interpolation/manifold_test.jl)
+
 
 # GSoC blog
 
