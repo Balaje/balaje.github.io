@@ -175,7 +175,20 @@ how it works. *Multiple dispatch*.
 
 In this code snippet,
 
-<script src="https://gist.github.com/Balaje/b4a6b3adceca1f84cf460acf0cfbaeee.js"></script>
+``` julia
+using UnicodePlots
+using ComplexPhasePortrait
+
+nx = 1000
+x = range(-1, stop=1, length=nx)
+Z = x' .+ reverse(x)*im
+
+f = z -> (z - 0.5im)^2 * (z + 0.5+0.5im)/z
+fz = f.(Z)
+
+img = portrait(fz)
+heatmap(img,width=80,height=80)
+```
 
 multiple dispatch occurs when I write
 
