@@ -20,7 +20,7 @@ finite element method. You can read more about my work in my
 {%- for post in site.posts limit:3 -%}
   <li>
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-  <span class="post-meta">{{ post.date | date: date_format }}</span>
+  <span class="post-meta">{{ post.date | date: date_format }}&emsp;&emsp;&emsp;Tag: {{post.tags[0]}}</span>
   <h3>
     <a class="post-link" href="{{ post.url | relative_url }}">
       {{ post.title | escape }}

@@ -2,7 +2,7 @@
 layout: post
 mathjax: true
 title: Virtual elements, biorthogonal projections and the peculiarity of second order VEM
-tags: [vem,biorthogonal,projection,VEM]
+tags: [wip,vem,biorthogonal,projection,VEM]
 ---
 
 When I began writing this post on 26th November, I was on a train
