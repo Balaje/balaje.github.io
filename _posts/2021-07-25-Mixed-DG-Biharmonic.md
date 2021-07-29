@@ -340,11 +340,6 @@ seems to actually be higher when the penalty term is proportional to
 $$|e_k|^{-1}$$ than when it is proportional to $$|e_k|^{-3}$$. This
 also needs some more tests.
 
-I am working on deriving the error
-estimates to see what is happening (it's hard). Or this may all be due
-to some odd special case and cannot be generalized. I will update you
-with a new blog entry if I find out anything related to this.
-
 ## References
 
 Gudi, T., Nataraj, N. & Pani, A.K. Mixed Discontinuous Galerkin Finite
