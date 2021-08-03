@@ -211,11 +211,6 @@ and I am able to generate the complex plot. In a nutshell ...
 >`UnicodePlots` to make sure that the data-types are consistent between
 >the functions.
 
-This is my version of explaining how multiple dispatch works here. I
-will explain this more clearly (and perhaps, more accurately ...) in
-a blog post the next time I encounter it, **which is probably a 110%
-chance.**
-
 I even tweeted this and people seem to like it!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Complex Phase
