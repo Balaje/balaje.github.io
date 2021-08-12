@@ -26,10 +26,10 @@ marked using a check-mark. The rest is mostly Work in Progress.
       different `::FEFunction` and `::FESpace`. There are two subtasks
       here.
   - Lagrange DOF Basis. [Local Branch](https://github.com/Balaje/Gridap.jl/tree/interpolate_everywhere_arbitrary_points)
-    - [ ] Making `nlsolve` more robust by providing optional
+    - [x] Making `nlsolve` more robust by providing optional
           parameters. This is for handling somewhat distorted
           elements.
-    - [ ] Interpolation for Lagrange elements.
+    - [x] Interpolation for Lagrange elements.
     - [ ] Finding an effective way to integrate that into
           the package. I thought of modifying
           `FESpaces._cell_vals` to accommodate the new functionality.
@@ -40,7 +40,7 @@ marked using a check-mark. The rest is mostly Work in Progress.
           and Alberto. This fixed an error
           that I was getting while evaluating RT Functions at
           arbitrary points.
-    - [ ] Interpolation for RT Elements. Most of the code is the same
+    - [x] Interpolation for RT Elements. Most of the code is the same
           for Lagrange elements, but I had to invoke
           `ReferenceFEs._eval_moment_dof_basis!` to convert the point
           value to the respective DOF.
