@@ -29,6 +29,22 @@ shell> cd blog-script/
 julia> include("blog-script.jl")
 ```
 
+## New features and merged PRs
+
+- Evaluate `FEFunction` at arbitrary points (since Gridap release [v.0.16.0](https://github.com/gridap/Gridap.jl/releases/tag/v0.16.0)):
+  - [Allow evaluating FE functions at arbitrary points #523 (Contributed
+  via Erik's branch)](https://github.com/gridap/Gridap.jl/pull/523#issuecomment-851219490)
+      - [Evaluate CellField on arbitrary points #1 (Erik's branch)](https://github.com/eschnett/Gridap.jl/pull/1)
+      - [More tests for evaluate #2 (Erik's
+    branch)](https://github.com/eschnett/Gridap.jl/pull/2)
+
+- Fix evaluation for RT Elements (since Gridap release [v.0.16.4](https://github.com/gridap/Gridap.jl/releases/tag/v0.16.4):
+  - [Evaluate any monomial basis at single point
+  #628](https://github.com/gridap/Gridap.jl/pull/628)
+
+- Interpolation between `FESpace` (since Gridap release [v.0.16.4](https://github.com/gridap/Gridap.jl/releases/tag/v0.16.4):
+  - [Interpolate everywhere arbitrary points #632](https://github.com/gridap/Gridap.jl/pull/632)
+
 ## Evaluating `CellField` on arbitrary point (Complete)
 
 This is the first step in implementing the interpolation
@@ -121,22 +137,6 @@ Raviart Thomas Element [here](https://github.com/Balaje/GSoC-2021/blob/a30ad3859
 Code to generate interpolation matrix. Sketched a way to do it for
 `LagrangianDofBasis` and a preliminary version is available on my [GSoC
 Repo](https://github.com/Balaje/GSoC-2021/blob/478b3f79bca501639ce5b61d42734655dd301780/Interpolation/imatrix.jl).
-
-## Pull Requests submitted
-
-- Evaluate `FEFunction` at arbitrary points:
-  - [Allow evaluating FE functions at arbitrary points #523 (Contributed
-  via Erik's branch)](https://github.com/gridap/Gridap.jl/pull/523)
-      - [Evaluate CellField on arbitrary points #1 (Erik's branch)](https://github.com/eschnett/Gridap.jl/pull/1)
-      - [More tests for evaluate #2 (Erik's
-    branch)](https://github.com/eschnett/Gridap.jl/pull/2)
-
-- Fix evaluation for RT Elements:
-  - [Evaluate any monomial basis at single point
-  #628](https://github.com/gridap/Gridap.jl/pull/628)
-
-- Interpolation between `FESpace`:
-  - [Interpolate everywhere arbitrary points #632](https://github.com/gridap/Gridap.jl/pull/632)
 
 
 ## Miscellaneous Examples
