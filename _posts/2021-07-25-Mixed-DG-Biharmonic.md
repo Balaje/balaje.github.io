@@ -315,7 +315,7 @@ convergence in elliptic FEM problems.
 | 5 | [6.3664, 5.9323, 5.9673] | | | | 5 | [6.5199, 6.6304, 7.5057] |
 
 Mostly the same, except now for $$k=1$$ i.e., linear polynomials we
-get the optimal rate of convergence when $$i=3$$. It might be because
+get the optimal rate of convergence when $$i=1$$. It might be because
 the exact solution is not a polynomial. Again, the results seems
 consistent with [Gudi et
 al.](https://link.springer.com/article/10.1007/s10915-008-9200-1) for
@@ -339,6 +339,16 @@ $$|e_k|^-1$$), the magnitude of the error for higher order elements
 seems to actually be higher when the penalty term is proportional to
 $$|e_k|^{-1}$$ than when it is proportional to $$|e_k|^{-3}$$. This
 also needs some more tests.
+
+## Update (14 Aug 2021)
+
+I did some test for 3D problems and I observed similar results as in 2D. The exact solution I assumed is 
+$$u(x,y,z) = x^4(1-x)^4y^4(1-y)^4z^4(1-z)^4$$ on a unit cube. 
+
+| $$i=3$$ | $$i=1$$ |
+| Polynomial order | Rate | | | | Polynomial order | Rate |
+| 1 | [2.8811, 1.3726, -0.0986] | | | | 1 | [2.0525, 2.2049, 2.4382] | 
+| 2 | [5.1508, 3.4932, 2.5361] | | | | 2 | [3.8400, 3.6734, 4.7405] |
 
 ## References
 
