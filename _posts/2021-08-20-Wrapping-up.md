@@ -38,11 +38,11 @@ julia> include("blog-script.jl")
       - [More tests for evaluate #2 (Erik's
     branch)](https://github.com/eschnett/Gridap.jl/pull/2)
 
-- Fix evaluation for RT Elements (since Gridap release [v.0.16.4](https://github.com/gridap/Gridap.jl/releases/tag/v0.16.4):
+- Fix evaluation for RT Elements (since Gridap release [v.0.16.4](https://github.com/gridap/Gridap.jl/releases/tag/v0.16.4)):
   - [Evaluate any monomial basis at single point
   #628](https://github.com/gridap/Gridap.jl/pull/628)
 
-- Interpolation between `FESpace` (since Gridap release [v.0.16.4](https://github.com/gridap/Gridap.jl/releases/tag/v0.16.4):
+- Interpolation between `FESpace` (since Gridap release [v.0.16.4](https://github.com/gridap/Gridap.jl/releases/tag/v0.16.4)):
   - [Interpolate everywhere arbitrary points #632](https://github.com/gridap/Gridap.jl/pull/632)
 
 ## Evaluating `CellField` on arbitrary point (Complete)
