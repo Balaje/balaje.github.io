@@ -3,6 +3,7 @@ layout: post
 mathjax: true
 tags: [vem, gridap]
 title: Virtual element solution with Gridap
+excerpt_separator: <!--more-->
 ---
 
 It is always exciting to explore whether a particular package can be
@@ -16,6 +17,8 @@ the discretization. However, **it is possible** to use the underlying
 machinery to implement the lowest order virtual element method using
 `Gridap.jl`. In this post, I will be briefly discussing the
 implementation.
+
+<!--more-->
 
 ## Introduction
 
@@ -45,7 +48,7 @@ implementation.
 4. We will also assume that the weak formulation is identical to the
 `FEM` formulation. Virtual element method has a different weak
 formulation which includes stability terms. This will be managed
-differently as will be seen in the tutorial. However, if being
+differently as we will see in the next section. However, if being
 implemented as a package, I presume that VEM weak formulation
 requires special treatment.
 
@@ -54,27 +57,29 @@ To build a lowest order VE space for a discrete model, we use the
 new data structure
 
   ```julia
-  P1ConformingVESpace(::DiscreteModel, ::StabilityCoeffs; kwargs...):
+  P1ConformingVESpace(::DiscreteModel, ::Function; kwargs...):
+
     model::DiscreteModel
     Π∇
     stability_term
     linear_fespace::FESpace # FESpace(model, ReferenceFE(lagrangian, Float64, 1); kwargs...)
     stab_coeff::Function
-
   ```
-  For the lowest order order case, the degrees of freedom is identical
+  For the lowest order order case, the virtual element degrees of freedom is identical
   to the lowest order Lagrange finite element space. So for
   geometrical purposes, we can associate a linear `FESpace` to the new
   conforming `VESpace`. In addition to that we have two new data
   structures `Π∇, stability_term` for the purpose of (cellwise) VEM
   projectors. You can find the details of the construction
-  [here](http://arturo.imati.cnr.it/brezzi/papers/hitchhikers-preprint.pdf).
+  [here](http://arturo.imati.cnr.it/brezzi/papers/hitchhikers-preprint.pdf). These
+  terms depend entirely on the geometry of the element and can be
+  computed while building the space.
 
 Once we construct the `VESpace`, we can construct the stiffness
 matrices (local) and the load vector (local) using these functions,
 cell-wise:
 
-  ```julia
+```julia
   function _generate_mat_contribs(a::Function, V::VESpace, acd, ind)
     area, centroid, diameter = acd[end]
     stab_coeff = get_stab_coeff(V)
@@ -141,8 +146,8 @@ available in Gridap, but with the extra dispatch
 
 ```julia
 function SparseMatrixAssembler(trial::VESpace, test::VESpace)
-    SparseMatrixAssembler(trial.linear_fespace, test.linear_fespace)
-  end
+SparseMatrixAssembler(trial.linear_fespace, test.linear_fespace)
+end
 
   # Assemble the matrices
   σₖ = get_cell_dof_ids(trial.linear_fespace)
@@ -158,7 +163,7 @@ solution) to the underlying `FESpace`, since we cannot express the
 virtual element basis explicitly. We perform a very basic
 convergence analysis to see if the numbers obey the error estimate
 
-  ```julia
+```julia
   || u - uₕ ||₀ ≤ Ch²
   ```
   We run the rate of convergence script `ooc_vem_example.jl` to check:
