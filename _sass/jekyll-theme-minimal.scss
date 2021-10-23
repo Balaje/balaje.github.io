@@ -41,7 +41,8 @@ a {
 
 a:hover, a:focus {
   color:#069;
-  fontp-weight: bold;
+  font-weight: bold;
+  font-style: italic;
 }
 
 a small {
@@ -174,7 +175,7 @@ strong {
 }
 
 section {
-  width:75%;
+  width:80%;
   left: 0%;
   float:right;
   padding-bottom:50px;
@@ -192,11 +193,14 @@ hr {
 }
 
 footer {
-  width:30%;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
+  text-align: center;
+  padding: 1px;
+  background-color: #87CEFA;
+  color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
 }
 
 @media print, screen and (max-width: 960px) {

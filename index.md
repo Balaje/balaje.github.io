@@ -11,8 +11,7 @@ interests lie in numerical methods to solve partial differential
 equations arising in real--life applications. Some of my most recent
 works includes the simulation of wave-induced ice--shelf vibrations using the
 finite element method. You can read more about my work in my
-[blog](/blog-page.html). **Also, my Google Summer of Code blog is up!
-[Click here](/gsoc/index.html) to check it out.**
+[blog](/blog-page.html).
 
 ## My 3 Recent Posts
 
@@ -30,7 +29,7 @@ finite element method. You can read more about my work in my
 {%- endfor -%}
 </ul>
 
-## My current projects
+## My Projects
 
 - [GSoC 2021](/gsoc/index.html): **Google Summer of Code 2021 with NumFOCUS**
 
