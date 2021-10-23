@@ -3,10 +3,10 @@
 
 body {
   background-color: #fff;
-  padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,7 +41,7 @@ a {
 
 a:hover, a:focus {
   color:#069;
-  font-weight: bold;
+  fontp-weight: bold;
 }
 
 a small {
@@ -103,6 +103,7 @@ th {
 img {
   max-width:100%;
   border-radius: 2%;
+  text-align: center;
 }
 
 header {
@@ -119,11 +120,11 @@ ul.downloads {
   background: #f4f4f4;
   border-radius:5px;
   border:1px solid #e0e0e0;
-  width:270px;
+  width:100%;
 }
 
 .downloads li {
-  width:89px;
+  width:33%;
   float:left;
   border-right:1px solid #e0e0e0;
   height:40px;
@@ -140,7 +141,7 @@ ul.downloads {
 .downloads a {
   line-height:1;
   font-size:11px;
-  color:#676767;
+  color:#267CB9;
   display:block;
   text-align:center;
   padding-top:4px;
@@ -148,7 +149,7 @@ ul.downloads {
 }
 
 .downloads a:hover, .downloads a:focus {
-  color:#7EC0EE;
+  color:#87CEFA;
   font-weight:bold;
 }
 
@@ -163,7 +164,7 @@ strong {
 
 .downloads li + li + li {
   border-right:none;
-  width:89px;
+  width:30%;
 }
 
 .downloads a strong {
@@ -276,13 +277,13 @@ footer {
 
 .mastheader {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #267CB9;
   padding: 1% 1%;
-  border-radius: 10px
 }
 
 .mastheader a {
-  color: black;
+  float: left;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -297,8 +298,8 @@ footer {
 }
 
 .mastheader a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #87CEFA;
+  color: white;
 }
 
 .mastheader-right {
