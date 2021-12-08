@@ -18,7 +18,7 @@ relatively easily which opens up a huge amount of possible
 applications. Recently, I got super
 interested in the theory of Hamilton Jacobi Equations including the
 well-posedness of the boundary value problem. In this post I would
-like to summarize briefly I have learned and the things I have worked on
+like to summarize briefly what I have learned and stuff I have worked on
 so far. I also intend to make a series of blog posts on this topic
 explaining the modelling and the mathematics that runs behind this problem.
 
@@ -36,7 +36,7 @@ differential equations known as Hamilton Jacobi Equations. For more
 details about the construction of the model, I refer the reader to the
 article by E. Prados and O. Faugeras and the references therein.
 
-> [Shape from shading: a well-posed problem?](https://ieeexplore.ieee.org/abstract/document/1467534)
+> ["Perspective shape from shading" and viscosity solutions](https://ieeexplore.ieee.org/document/1238433)
 
 All the models assume that the brightness value $$I(x,y)$$ at each
 pixel is related to the reflectance of any surface $$R(n(x,y))$$
