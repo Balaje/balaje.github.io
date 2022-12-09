@@ -4,13 +4,10 @@ layout: default
 
 # Welcome to my research website.
 
-My name is Balaje Kalyanaraman and I am a PhD student at the
-University of Newcastle, Australia. I did my M.Sc (Hons) Mathematics
+My name is Balaje Kalyanaraman and I am a postdoctoral fellow at Umeå University, Sweden. I received my PhD from the University of Newcastle, Australia in August 2022. I did my M.Sc (Hons) Mathematics
 and B.E (Hons) Mechanical Engineering from BITS Pilani - Goa Campus. My
 interests lie in numerical methods to solve partial differential
-equations arising in real--life applications. Some of my most recent
-works includes the simulation of wave-induced ice--shelf vibrations using the
-finite element method. You can read more about my work in my
+equations arising in real--life applications. You can read more about my work in my
 [blog](/blog-page.html).
 
 ## My 3 Recent Posts
@@ -29,7 +26,7 @@ finite element method. You can read more about my work in my
 {%- endfor -%}
 </ul>
 
-## My Projects
+## My Projects (*Recent*ish)
 
 - [GSoC 2021](/gsoc/index.html): **Google Summer of Code 2021 with NumFOCUS**
 

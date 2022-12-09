@@ -5,8 +5,9 @@ description:
 ---
 
 # Education
-- **Ph.D. Candidate** (Mathematics), The University of Newcastle,
-Australia. (2018 - present)
+- **Postdoc**, Umeå University, Sweden (2022- )
+- **Ph.D.** (Mathematics), The University of Newcastle,
+Australia. (2018-2022)
 - **M.Sc.(Hons)** Mathematics, BITS Pilani Goa Campus (2012-2017)
 - **B.E.(Hons)** Mechanical Engineering, BITS Pilani Goa Campus (2012-2017)
 
