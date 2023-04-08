@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<html lang="{{ site.lang | default: "en-US" }}">
-    <head>
-        <meta charset="UTF-8">
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ '/assets/css/academicons.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -28,34 +25,31 @@
         </div>
     </div>
 
-    <br><br>
+    <hr>
+    <br>
 
     <body>
         <div class="wrapper">
             <header>
                 {% if site.logo %}
-                <img src="{{site.logo | relative_url}}" alt="Logo"/>
+                <img class="special-image" src="{{site.logo | relative_url}}" alt="Logo" border-radious=100%/>
                 {% endif %}
 
-                <p>{{ site.description | default: site.github.project_tagline }}</p>
+                <p style="font-size:14px;">{{ site.description | default: site.github.project_tagline }}</p>
 
 
                 {% if site.show_downloads %}
                 <ul class="downloads">
                     <li><a class="contact_link" href="https://scholar.google.com.au/citations?user=h_FPNVAAAAAJ&hl=en">
                         <i class="ai ai-google-scholar-square ai-3x"></i></a></li>
-                    <li><a class="contact_link" href="https://github.com/Balaje">
-                        <i class="fa fa-github-square fa-3x"></i></a></li>
-                    <li><a class="contact_link" href="https://www.bitbucket.org/balajek">
-                        <i class="fa fa-bitbucket-square fa-3x"></i></a></li>
-                </ul>
-                <ul class="downloads">
                     <li><a class="contact_link" href="https://www.researchgate.net/profile/K_Balaje">
                         <i class="ai ai-researchgate-square ai-3x"></i></a></li>
+                </ul>
+                <ul class="downloads">
+                    <li><a class="contact_link" href="https://github.com/Balaje">
+                        <i class="fa fa-github-square fa-3x"></i></a></li>
                     <li><a class="contact_link" href="https://orcid.org/0000-0001-6181-1876">
                         <i class="ai ai-orcid-square fa-3x"></i></a></li>
-                    <li><a class="contact_link" href="https://arxiv.org/a/balaje_k_1.html">
-                        <i class="ai ai-arxiv-square ai-3x"></i></a></li>
                 </ul>
                 {% endif %}
             </header>
@@ -63,10 +57,9 @@
 
                 {{ content }}
 
-            </section>
-            <footer>
-                <small style="text-align: center;">&copy 2019- Balaje Kalyanaraman. Hosted on GitHub Pages. Based on the Minimal Theme by <a href="https://orderedlist.com/minimal/">orderedlist</a></small>
-            </footer>
+                <small style="text-align: center;">&copy 2019- Balaje Kalyanaraman. Hosted on Github pages. Based on the Minimal Theme by <a href="https://orderedlist.com/minimal/">orderedlist</a></small>
+
+            </section>           
         </div>
         <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 
