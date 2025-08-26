@@ -4,7 +4,9 @@ title: Balaje's Research
 mathjax : true
 youtubeId: lE5mlxDdmaY
 ---
+
 # Ice Shelf Vibrations
+---
 
 | ![Ice Shelf](/img/ice.png) |
 
@@ -39,9 +41,10 @@ and also my paper
 {% include youtubePlayer.html id="bk8VWGwTi48" %}
 
 {% include youtubePlayer.html id="cZX5naD8r5I" %}
-
+<br>
 
 # Gradient Recovery for Virtual Element Methods
+---
 
 Gradient recovery methods are popular numerical techniques to
 approximate the gradient of the solution. They have super

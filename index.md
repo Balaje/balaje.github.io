@@ -3,6 +3,7 @@ layout: default
 ---
 
 # Welcome to my research website.
+---
 
 My name is Balaje Kalyanaraman and I am a postdoctoral fellow at Umeå University, Sweden. I received my PhD from the University of Newcastle, Australia in August 2022. I did my M.Sc (Hons) Mathematics
 and B.E (Hons) Mechanical Engineering from BITS Pilani - Goa Campus. My
@@ -10,7 +11,8 @@ interests lie in numerical methods to solve partial differential
 equations arising in real--life applications. You can read more about my work in my
 [blog](/blog-page.html).
 
-## My 3 Recent Posts
+# My 3 Recent Posts
+---
 
 <ul class="post-list">
 {%- for post in site.posts limit:3 -%}
@@ -26,16 +28,17 @@ equations arising in real--life applications. You can read more about my work in
 {%- endfor -%}
 </ul>
 
-## My Recent Projects 
+## My Recent Projects
+---
 
 - **Multiscale finite element method:**
   I am currently working on multiscale finite element methods to solve boundary value problems with highly oscillatory/random coefficients. Some examples in 1D are shown below.
 
 | ![Oscillatory coefficients](./img/sol_6_oscillatory.png) | ![Oscillatory coefficients](./img/sol_7_random.png) |
 
-  You can find more about this work on my [Github Repository](https://github.com/Balaje/MultiScaleFEM.jl). 
 
 ## My Past Projects
+---
 
 - [GSoC 2021](/gsoc/index.html): **Google Summer of Code 2021 with NumFOCUS**
 
@@ -61,4 +64,4 @@ equations arising in real--life applications. You can read more about my work in
 
    - [Mike Meylan](https://www.newcastle.edu.au/profile/mike-meylan), University of Newcastle.
    - [Bishnu Lamichhane](https://www.newcastle.edu.au/profile/bishnu-lamichhane), University of Newcastle.
-   - [Luke Bennetts](https://luke-bennetts.com/), University of Adelaide. 
+   - [Luke Bennetts](https://luke-bennetts.com/), University of Adelaide.

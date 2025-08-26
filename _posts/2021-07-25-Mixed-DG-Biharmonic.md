@@ -342,16 +342,16 @@ also needs some more tests.
 
 ## Update (14 Aug 2021)
 
-I did some test for 3D problems and I observed similar results as in 2D. The exact solution I assumed is 
-$$u(x,y,z) = x^4(1-x)^4y^4(1-y)^4z^4(1-z)^4$$ on a unit cube. 
+I did some test for 3D problems and I observed similar results as in 2D. The exact solution I assumed is
+$$u(x,y,z) = x^4(1-x)^4y^4(1-y)^4z^4(1-z)^4$$ on a unit cube.
 
 | $$i=3$$ | $$i=1$$ |
 | Polynomial order | Rate | | | | Polynomial order | Rate |
-| 1 | [2.8811, 1.3726, -0.0986] | | | | 1 | [2.0525, 2.2049, 2.4382] | 
+| 1 | [2.8811, 1.3726, -0.0986] | | | | 1 | [2.0525, 2.2049, 2.4382] |
 | 2 | [5.1508, 3.4932, 2.5361] | | | | 2 | [3.8400, 3.6734, 4.7405] |
 
 ## References
 
 Gudi, T., Nataraj, N. & Pani, A.K. Mixed Discontinuous Galerkin Finite
 Element Method for the Biharmonic Equation. J Sci Comput 37, 139–161
-(2008). [https://doi.org/10.1007/s10915-008-9200-1]([https://doi.org/10.1007/s10915-008-9200-1)
+(2008). [https://doi.org/10.1007/s10915-008-9200-1](https://doi.org/10.1007/s10915-008-9200-1)
