@@ -56,6 +56,10 @@ Newcastle, 15-16 April 2019 -
 # Publications
 ---
 
+- **Kalyanaraman, B.**, Krumbiegel, F., Maier, R., & Wang,
+  S. (2025). Optimal higher-order convergence rates for parabolic
+  multiscale problems. *Submitted* arXiv [Math.NA]. Retrieved from
+  [https://arxiv.org/abs/2510.09514](https://arxiv.org/abs/2510.09514)
 - K. Duru, **B. Kalyanaraman**, S. Wang, On the stability
   analysis of the perfectly matched layer for the elastic wave
   equation in layered media, *Journal of Computational Physics,
