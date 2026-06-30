@@ -7,8 +7,8 @@ description:
 # Education
 ---
 
-- **Postdoc**, Department of Computing Science, Umeå University, Sweden (Feb 2025- )
-- **Postdoc**, Department of Mathematics and Mathematical Statistics, Umeå University, Sweden (Dec 2022- Dec 2024)
+- **Postdoc**, Department of Computing Science, Umeå University, Sweden (Feb 2025-Feb 2026)
+- **Postdoc**, Department of Mathematics and Mathematical Statistics, Umeå University, Sweden (Dec 2022-Dec 2024)
 - **Ph.D.** (Mathematics), The University of Newcastle,
 Australia. (2018-2022)
 - **M.Sc.(Hons)** Mathematics, BITS Pilani Goa Campus (2012-2017)
@@ -55,7 +55,10 @@ Newcastle, 15-16 April 2019 -
 
 # Publications
 ---
-
+- **Kalyanaraman, B.**, Krumbiegel, F., Maier, R., & Wang,
+  S. (2026). Enriched higher-order multiscale approaches with applications to wave propagation. 
+  *Submitted* arXiv [Math.NA]. Retrieved from
+  [https://arxiv.org/abs/2605.30118](https://arxiv.org/abs/2605.30118)
 - **Kalyanaraman, B.**, Krumbiegel, F., Maier, R., & Wang,
   S. (2025). Optimal higher-order convergence rates for parabolic
   multiscale problems. *Submitted* arXiv [Math.NA]. Retrieved from
@@ -109,6 +112,11 @@ Bangalore (2016, 2017).
 # Programming
 ---
 
-- **Languages**: Julia, MATLAB, C++, Fortran, Python
+- **Languages** (Current Usage): 
+  - Julia <progress id="file" value="65" max="100"> 65% </progress>
+  - MATLAB <progress id="file" value="25" max="100"> 25% </progress> 
+  - C++ <progress id="file" value="3.33" max="100"> 3.33% </progress>
+  - Fortran <progress id="file" value="3.33" max="100"> 3.33% </progress>
+  - Python <progress id="file" value="3.33" max="100"> 3.33% </progress>
 - **Packages**: FreeFem, LaTeX, Gridap.jl
 - **Version Control**: Git
