@@ -1,77 +1,95 @@
 <!DOCTYPE html>
-        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ '/assets/css/academicons.css?v=' | append: site.github.build_revision | relative_url }}">
-        <script src="https://use.fontawesome.com/fa43afbafd.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+<html lang="en">
 
-        {% seo %}
-        <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-        <!--[if lt IE 9]>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <![endif]-->
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/font-awesome-4.7.0/css/font-awesome.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academicons-1.9.4/css/academicons.min.css' | relative_url }}">
+  
+  <title>
+    {% if page.title %}
+    {{ page.title }} · {{ site.title }}
+    {% else %}
+    {{ site.title }}
+    {% endif %}
+  </title>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js" async></script>
+  
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism.min.css" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-julia.min.js"></script>
+</head>
 
-    <div class="mastheader">
-        <a href="{{ "/" | absolute_url }}">Balaje Kalyanaraman</a>
-        <div class="mastheader-right">
-            <a href="/">Home</a>
-            <a href="/about.html">Resume</a>
-            <a href="/research.html">Research</a>
-            <a href="/blog-page.html">Blog</a>
-            <a href="/gsoc/index.html">GSoC</a>
-            <a href="/wip/index.html">WIP</a>
-        </div>
-    </div>
-
-    <hr>
-    <br>
-
-    <body>
-        <div class="wrapper">
-            <header>
-                {% if site.logo %}
-                <img class="special-image" src="{{site.logo | relative_url}}" alt="Logo" border-radious=100%/>
-                {% endif %}
-
-                <p style="font-size:14px;">{{ site.description | default: site.github.project_tagline }}</p>
-
-
-                {% if site.show_downloads %}
-                <ul class="downloads">
-                    <li><a class="contact_link" href="https://scholar.google.com.au/citations?user=h_FPNVAAAAAJ&hl=en">
-                        <i class="ai ai-google-scholar-square ai-3x"></i></a></li>
-                    <li><a class="contact_link" href="https://www.researchgate.net/profile/K_Balaje">
-                        <i class="ai ai-researchgate-square ai-3x"></i></a></li>
-                </ul>
-                <ul class="downloads">
-                    <li><a class="contact_link" href="https://github.com/Balaje">
-                        <i class="fa fa-github-square fa-3x"></i></a></li>
-                    <li><a class="contact_link" href="https://orcid.org/0000-0001-6181-1876">
-                        <i class="ai ai-orcid-square fa-3x"></i></a></li>
-                </ul>
-                {% endif %}
-            </header>
-            <section>
-
-                {{ content }}
-
-                <small style="text-align: center;">&copy 2019- Balaje Kalyanaraman. Hosted on Github pages. Based on the Minimal Theme by <a href="https://orderedlist.com/minimal/">orderedlist</a></small>
-
-            </section>           
-        </div>
-        <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-
-        {% if jekyll.environment == 'production' %}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T53S9SY4F2"></script>
-        <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-
-         gtag('config', 'G-T53S9SY4F2');
-        </script>
-        {% endif %}
-    </body>
+<body>
+  
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Balaje Kalyanaraman</a>
+      <a href="{{ '/about/' | relative_url }}" class="{% if page.url contains '/about/' %}active{% endif %}">About</a>
+      <a href="{{ '/summary/' | relative_url }}" class="{% if page.url contains '/summary/' %}active{% endif %}">Projects</a>      
+      <a href="{{ '/archive/' | relative_url }}" class="{% if page.url contains '/archive/' %}active{% endif %}">News Archive</a>      
+      <a href="{{ '/blog/' | relative_url }}" class="{% if page.url contains '/blog/' %}active{% endif %}">Blog</a>
+    </nav>
+  </header>
+  
+  <div class="page-layout">
+    <aside class="sidebar">
+      <h3> <img src="/img/avatar_icon.jpg" /> </h3>
+      <div class="social-links">
+        <a href="https://github.com/Balaje">
+          <i class="fa fa-github"></i>
+          GitHub
+        </a>
+        <a href="https://www.researchgate.net/profile/K-Balaje">
+          <i class="ai ai-researchgate"></i>
+          ResearchGate
+        </a>
+        <a href="https://scholar.google.com/citations?user=h_FPNVAAAAAJ">
+          <i class="ai ai-google-scholar"></i>
+          Google Scholar
+        </a>
+        <a href="https://orcid.org/0000-0001-6181-1876">
+          <i class="ai ai-orcid"></i>
+          ORCID
+        </a>
+        <a href="mailto:balaje6@gmail.com">
+          <i class="fa fa-envelope"></i>
+          Email
+        </a>
+        <a href="/gsoc/">
+          <i class="fa fa-book"></i>
+          GSoC 2021
+        </a>
+      </div>
+    </aside>
+    
+    <main>    
+      {{ content }}
+    </main>
+  </div>
+  
+  <footer>
+    <p>© {{ site.time | date: "%Y - " }} {{ site.title }}</p>
+  </footer>
+  
+</body>
 </html>

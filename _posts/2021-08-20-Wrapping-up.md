@@ -117,9 +117,9 @@ gₕ = interpolate_everywhere(ifₕ,W₁) # Interpolate fₕ ∈ V₁ on to W₁
 We had a lot of back and forth on the interface and some of the
 possible implementations are available on the blog posts:
 
->- [Interpolation for Lagrangian Elements - I](2021/07/05/GSoC-Week-1.html)
->- [Interpolation for Lagrangian Elements - II](2021/07/05/GSoC-Week-2.html)
->- [Interpolation for Raviart Thomas Basis Functions](2021/07/05/GSoC-Week-3.html)
+>- [Interpolation for Lagrangian Elements - I](/2021/07/05/GSoC-Week-1.html)
+>- [Interpolation for Lagrangian Elements - II](/2021/07/05/GSoC-Week-2.html)
+>- [Interpolation for Raviart Thomas Basis Functions](/2021/08/01/GSoC-Week-3.html)
 
 
 But we finally settled on the current interface using `Interpolable`

@@ -1,6 +1,7 @@
 ---
-layout: gsocblog
+layout: default
 title: GSoC blog
+permalink: /gsoc/
 ---
 
 # Overview (Updated)
@@ -46,3 +47,26 @@ Relevant Code:
 >   Elements](https://github.com/Balaje/GSoC-2021/blob/main/Interpolation/interpolate_rt.jl)
 > - [Evaluation of FEFunction on d-1 Manifold (Test
 >   Set)](https://github.com/Balaje/GSoC-2021/blob/main/Interpolation/manifold_test.jl)
+
+# Relevant Posts
+
+{% for post in site.posts %}
+
+<article>
+  {%- if post.tags[0] == "gridap" and post.tags[1] == "gsoc" -%}
+    <h2>
+        <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+        </a>
+    </h2>
+
+    <p>
+        {{ post.date | date: "%B %-d, %Y" }}
+    </p>
+
+    {{ post.excerpt }}
+  {%- endif -%}
+
+</article>
+
+{% endfor %}

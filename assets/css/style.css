@@ -1,0 +1,178 @@
+html {
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px; 
+  font-family: "STIX Two Text", serif;
+  line-height: 1.6;
+  font-size: 1rem;    
+  text-align: justify;
+}
+
+header {
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+nav a {
+  font-family: "IBM Plex Mono", monospace;  
+  padding: 6px 12px;
+  margin-right: 0;
+  text-decoration: none;
+  border: 1px solid #d5d5d5;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold  
+}
+
+nav a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #3ABFC0;
+  color: white;
+}
+
+nav a.active {
+  background-color: #676666;
+  font-weight: bold;
+  color: white;
+}
+
+.push-right {
+  margin-left: auto;   /* Absorbs all extra space on the left */
+}
+
+main {  
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 15px;
+  background: #f5f5f5;
+}
+
+blockquote {
+  margin: 20px 0;
+  padding: 0.5em 0.5em;  
+  border-radius: 8px;  
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.8rem;
+  font-style: italic; 
+  background-color: #f9f9f9;
+  color: #333333;  
+  border-left: 5px solid #0066cc;
+  padding: 5px 20px;
+}
+
+a {
+  color: #008c95;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #006f77;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: 600;
+  background-color: #f5f5f5;
+}
+
+tr:hover {
+  background-color: #fafafa;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 50px;
+  padding: 40px 0;
+}
+
+.sidebar {
+  position: sticky;
+  top: 30px;
+  align-self: start;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9rem;
+  border-right: 1px solid #ddd;
+  padding-right: 25px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  font-family: "STIX Two Text", serif;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #008c95;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  font-weight: bold;
+}
+
+.social-links i {
+  width: 18px;
+  text-align: center;
+}
+
+.page-layout main {
+  min-width: 0;
+}
+
+.post-date {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  color: #777;
+}
