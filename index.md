@@ -26,7 +26,7 @@ I wrote a sample tutorial on automatic differentiation (AD) in density-based top
 High-order multiscale finite element methods to solve boundary value problems with highly oscillatory/random coefficients. This is joint work with 
 - [Siyang Wang](https://www.umu.se/en/staff/siyang-wang/), Umeå University, Sweden,
 - [Felix Krumbiegel](https://www.uni-saarland.de/lehrstuhl/rupp/team/dr-felix-krumbiegel.html), Saarland University, Germany, and 
-- [Roland Maier](https://ianm.math.kit.edu/english/jrg/npde/maier.php), Karlsruhe University, Germany.
+- [Roland Maier](https://ianm.math.kit.edu/english/jrg/npde/maier.php), Karlsruhe Institute of Technology (KIT), Germany.
 
 Here is the repository [MsFEM.jl@github](https://github.com/Balaje/MsFEM.jl) containing the code to implement the method discussed in our papers:
 > *<u>Kalyanaraman, B.</u>, Krumbiegel, F., Maier, R., & Wang, S. (2026).* **Enriched higher-order multiscale approaches with applications to wave propagation**. *Submitted* arXiv [Math.NA]. [https://arxiv.org/abs/2605.30118](https://arxiv.org/abs/2605.30118)<br>
